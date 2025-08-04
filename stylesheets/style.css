@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#tool{
+    display: block;
+    text-align: center;
+}
+
+#decryptionPage{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 100px;
+    transition: 0.5s;
+}
+
+#decryptionPage:hover{
+    color: greenyellow;
+    background-color: black;
+}
+
+#keyH3, #encryptedMessage{
+    justify-self: flex-start;
+}
+
+#keyH3, #keyResult, #keyCopyBtn{
+    display: none;
+}
+
+#submit{
+    margin: 30px;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: green;
+    color: white;
+}
+
+#keyViewer{
+    border-radius: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px 10px;
+    margin: 30px;
+}
+
+#keyViewer:hover{
+    color: white;
+    background-color: black;
+}
+
+#keyCopyBtn{
+    margin: 30px;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#keyCopyBtn:hover{
+    background-color: gray;
+    color: white;
+}
