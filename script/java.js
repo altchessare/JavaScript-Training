@@ -37,23 +37,24 @@ submitBtn.onclick = function(){
 }
 
 keyViewer.onclick = function(){
-    if(key.style.display === "none"){
-        key.style.display = "block";
-        keyResult.style.display = "block";
-        keyCopyBtn.style.display = "block";
+    const isHidden = !key.classList.contains("visible");
+    if(isHidden){
+        key.classList.add("visible");
+        keyResult.classList.add("visible");
+        keyCopyBtn.classList.add("visible");
         keyViewer.textContent = "Hide your Key";
     } else {
-        key.style.display = "none"
-        keyResult.style.display = "none";
-        keyCopyBtn.style.display = "none";
-        keyViewer.textContent = "View your Key"
+        key.classList.remove("visible");
+        keyResult.classList.remove("visible");
+        keyCopyBtn.classList.remove("visible");
+        keyViewer.textContent = "View your Key";
     }
 }
 
 keyCopyBtn.onclick = function(){
     navigator.clipboard.writeText(shuffledCharSet)
         .then(() => {
-            copyMessage.style.display = "inline"; // show it
+            copyMessage.classList.add("visible");
             copyMessage.style.opacity = "1";
 
             setTimeout(() => {
@@ -62,8 +63,9 @@ keyCopyBtn.onclick = function(){
             }, 1000);
 
             setTimeout(() => {
-                copyMessage.style.display = "none";
+                copyMessage.classList.remove("visible");
                 copyMessage.style.transition = "none";
+                copyMessage.style.opacity = "1";
             }, 1500);
         })
         .catch(err => {

@@ -31,8 +31,33 @@ body{
     justify-self: flex-start;
 }
 
-#keyH3, #keyResult, #keyCopyBtn{
+#keyH3,
+#keyResult,
+#copyMessage {
+    visibility: hidden;
+}
+
+#keyCopyBtn {
+    visibility: hidden;
     display: none;
+}
+
+#keyCopyBtn.visible {
+    visibility: visible;
+    display: inline-block;
+}
+
+#keyResult {
+    display: inline-block;
+    min-width: 400px;
+    text-align: left;
+    word-break: break-all;
+}
+
+#keyH3.visible,
+#keyResult.visible,
+#copyMessage.visible {
+    visibility: visible;
 }
 
 #submit{
