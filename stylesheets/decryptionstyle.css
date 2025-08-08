@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contentDiv{
+    display: block;
+    text-align: center;
+}
+
+
+#submitBtn{
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin: 20px;
+    transition: 0.5s;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#submitBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+#generatedMsgH3{
+    display: flex;
+    align-items: flex-start;
+    font-weight: 100;
+}
+
+#generatedMsgH3{
+    font-weight: bold;
+}
+
+#encryptionPageLink{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 50px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+#encryptionPageLink:hover{
+    background-color: black;
+    color: green;
+}
+
+.decryptionElement{
+    font-size: 20px;
+}
