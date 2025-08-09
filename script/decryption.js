@@ -20,3 +20,17 @@ submitBtn.onclick = function(){
     }
     generatedMsg.textContent = result;
 }
+
+document.querySelectorAll('.decryptionElement').forEach(function(input) {
+    input.addEventListener("input", function () {
+        const span = document.createElement("span");
+        span.style.visibility = "hidden";
+        span.style.whiteSpace = "pre";
+        span.style.font = getComputedStyle(this).font;
+        span.textContent = this.value || " ";
+        document.body.appendChild(span);
+
+        this.style.width = span.offsetWidth + 30 + "px";
+        document.body.removeChild(span);
+    });
+});

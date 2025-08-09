@@ -1,59 +1,121 @@
-body{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+html, body{
+    padding: none;
+    margin: none;
+    height: 100%;   
+    background: black;
 }
 
-#contentDiv{
-    display: block;
-    text-align: center;
-}
-
-
-#submitBtn{
-    background: none;
-    border: none;
-    font-size: 20px;
-    margin: 20px;
-    transition: 0.5s;
-    padding: 5px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-#submitBtn:hover{
-    background-color: black;
+*{
     color: white;
 }
 
-#generatedMsgH3{
+#mainContainer{
+    margin: none;
+    padding: none;
     display: flex;
-    align-items: flex-start;
-    font-weight: 100;
+    flex-direction: column;
 }
 
-#generatedMsgH3{
-    font-weight: bold;
+/* Header */
+
+#header{
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    align-items: center;
+    background: linear-gradient(to right, rgb(10, 104, 0, 0.523), black, rgba(10, 104, 0, 0.523));
 }
 
-#encryptionPageLink{
+.link{
     text-decoration: none;
-    color: black;
-    font-size: 30px;
-    font-weight: 600;
-    transition: 0.5s;
-    cursor: pointer;
-    margin: 50px;
-    padding: 10px 10px;
+    font-size: 1.2em;
+    padding: 5px 10px;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
-#encryptionPageLink:hover{
+.link:hover{
     background-color: black;
-    color: green;
+    color: rgb(26, 104, 0);
+}
+
+#headerRight{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+    margin-right: 40px;
+    flex: 1;
+}
+
+#headerH1{
+    flex: 1;
+    color:  rgb(207, 255, 185);
+}
+
+#decryptionTool{
+    font-size: 2em;
+    margin: 20px;
+    display: block;
+    padding: 10px;
+}
+
+#textInputContainer{
+    display: block;
 }
 
 .decryptionElement{
+    background: linear-gradient(to right, gray, black) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px;
+    padding: 4px 10px;
+    min-width: 150px;
+    width: fit-content;
+    outline: none;
+}
+
+.decryptionElement:focus{
+        box-shadow: 0px 0px 10px rgba(13, 255, 0, 0.5);
+}
+
+.labels{
+    margin-bottom: 8px;
+    padding: 0 10px 0 0;
+    align-items: center;
+}
+
+.button{
+    background: none;
+    border: 2px solid rgba(9, 255, 0, 0.374);
+    border-radius: 5px;
     font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background-color: rgb(34, 255, 0);
+    color: black;
+    border-color:rgb(34, 255, 0);
+}
+
+#generatedMsgH3{
+    margin-top: 100px;
+    color: rgba(17, 255, 0, 0.655);
+}
+
+.inputMirror{
+    position: absolute;       
+    visibility: hidden;       
+    white-space: pre;        
+    font: inherit;            
+    font-size: inherit;       
+    padding: 4px 10px;        
+    background: none;        
+    border: none;    
 }

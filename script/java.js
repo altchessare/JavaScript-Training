@@ -19,7 +19,7 @@ messageInput.addEventListener("input", function () {
     span.textContent = this.value || " ";
     document.body.appendChild(span);
 
-    this.style.width = span.offsetWidth + 20 + "px";
+    this.style.width = span.offsetWidth + 30 + "px";
     document.body.removeChild(span);
 });
 

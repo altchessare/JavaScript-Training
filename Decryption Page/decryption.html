@@ -7,20 +7,37 @@
     <link rel="stylesheet" href="../stylesheets/decryptionstyle.css">
 </head>
 <body>
-    <div id="contentDiv">            
-        <h1>Welcome to the message Decryption tool!</h1>
+    <div id="mainContainer">      
+        <div id="header">
+            <h1 id="headerH1">Welcome to the message Decryption tool!</h1>  
+            <div id="headerRight">
+                <a href="" id="infoPage" class="link">How this tool works</a>
+                <a href="../index.html" id="encryptionPageLink" class="link">Go to the encryption page</a>
+            </div>
+        </div>
 
-        <label for="key" id="keyLabel">Input your Key:</label>
-        <input id="key" class="decryptionElement"><br><br>
-        <label for="message">Input your message</label>
-        <input  id="message" class="decryptionElement"><br><br>
-        <button id="submitBtn">Submit</button><br><br>
+        <div id="decryptionTool">
+            <div id="textInputContainer">
+                <label for="key" id="keyLabel" class="labels">Input your Key:</label>
+                <input id="key" class="decryptionElement">
+                <span class="inputMirror"></span>
+                <br><br>
+
+                <label for="message" class="labels">Input your message:</label>
+                <input  id="message" class="decryptionElement">
+                <span class="inputMirror"></span>
+                <br><br>
+            </div>
         
-        <h3 id="generatedMsgH3">Your Message: <label id="generatedMessage"></label></h3>
+            <button id="submitBtn" class="button">Submit</button><br><br>
+            <h3 id="generatedMsgH3">Your Message: <label id="generatedMessage"></label></h3>
+        </div>
+        
+        
     </div>
 
         
-    <a href="../index.html" id="encryptionPageLink">Go to the encryption page</a>
+    
 
 
 <script src="../script/decryption.js"></script>
