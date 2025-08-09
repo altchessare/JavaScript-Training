@@ -20,18 +20,22 @@
             <div id="encryptionTool">
                 <div id="messageInputContainer">
                     <label for="messageToBeCoded" id="messageToBeCodedLabel">The message you want to encrypt: </label>
-                    <input id="messageToBeCoded">
+                    <input id="messageToBeCoded" type="text" autocomplete="off">
                     <span id="inputMirror"></span>
                 </div>
-                <button id="submit">Submit</button>
+                <button id="submit" class="button">Submit</button>
                 <p id="encryptedMessage">Encrypted Message: <label id="encryptedMessageResult"></label></p>
             </div>
 
             <div id="keyViewerContainer">
-                <button id="keyViewer">View your Key</button>
+                <button id="keyViewer" class="button">View your Key</button>
                 <h3 id="keyH3">Your Key: <label id="keyResult"></label></h3>
-                <button id="keyCopyBtn">Copy the key!</button>
+                <button id="keyCopyBtn" class="button">Copy the key!</button>
                 <span id="copyMessage" style="margin-left: 10px;">Copied!</span>
+            </div>
+
+            <div id="footer">
+                <p>Don't forget save both your key and message, as they will be gone after a second entry.</p>
             </div>
 
            

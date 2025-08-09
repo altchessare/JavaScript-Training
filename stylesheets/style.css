@@ -54,12 +54,12 @@ html, body{
 
 #headerH1{
     flex: 1;
+    color:  rgb(255, 185, 185);
 }
 
 /* Main Tool */
 
 #encryptionTool{
-    border: solid white 1px;
     font-size: 2em;
     margin: 20px;
     display: block;
@@ -88,12 +88,63 @@ html, body{
     border: none !important;
     border-radius: 10px;
     padding: 4px 10px;
+    min-width: 150px;
+    width: fit-content;
+    outline: none;
+}
+
+#messageToBeCoded:focus{
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
 }
 
 #messageToBeCodedLabel{
-    margin: 0;
+    margin-bottom: 8px;
     padding: 0 10px 0 0;
     align-items: center;
+}
+
+.button{
+    background: none;
+    border: 2px solid rgba(255, 0, 0, 0.374);
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background-color: red;
+    color: black;
+}
+
+#encryptedMessage{
+    margin-top: 100px;
+    color: red;
+}
+
+/* Key Viewer */
+
+#keyViewerContainer{
+    font-size: 2em;
+    margin: 20px;
+    display: block;
+    padding: 10px;
+}
+
+#keyH3{
+    color: green;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer p{
+    background-color: red;
+    padding: 10px 5px;
+    border-radius: 10px;
 }
 
 /* Essentials for javascript. */

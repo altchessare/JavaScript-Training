@@ -5,10 +5,23 @@ const keyViewer = document.getElementById("keyViewer");
 const keyResult = document.getElementById("keyResult");
 const keyCopyBtn = document.getElementById("keyCopyBtn");
 const copyMessage = document.getElementById("copyMessage");
+const messageInput = document.getElementById("messageToBeCoded");
 let shuffledCharSet = "";
 let result;
 let originalMessage;
 let encryptedMessageResult = document.getElementById("encryptedMessageResult");
+
+messageInput.addEventListener("input", function () {
+    const span = document.createElement("span");
+    span.style.visibility = "hidden";
+    span.style.whiteSpace = "pre";
+    span.style.font = getComputedStyle(this).font;
+    span.textContent = this.value || " ";
+    document.body.appendChild(span);
+
+    this.style.width = span.offsetWidth + 20 + "px";
+    document.body.removeChild(span);
+});
 
 function shuffleCharSet(originalCharset){
     let array = originalCharset.split("");
