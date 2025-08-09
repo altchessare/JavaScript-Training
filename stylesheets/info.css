@@ -1,0 +1,26 @@
+*{
+    color: white;
+}
+
+body{
+    background: linear-gradient(to right, purple, black, black, black, purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#mainContent{
+  max-width: 600px;       /* or width: 600px; */
+  overflow-wrap: break-word;
+  word-break: break-word; /* for better browser support */
+  white-space: normal;    /* just to be sure */
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/info.css">
+</head>
+<body>
+    <header id="header">
+        <h1>How does the simple substitution encryption tool work?</h1>
+        <p>Made by Altchessare</p>
+    </header>
+    <article id="mainContent">
+        <p>I started this website as a small project to both stay in my 
+        portfolio and to learn new things both in CSS and JS. I used
+        a simple substitution method to encrypt messages. It works 
+        by taking a set of characters (the alphabet + special characters)
+        and shuffling them in a random manner each time the "Submit" is
+        pressed. After the shuffle, the function takes the index of 
+        each of the characters in the submitted message, matches them
+        with the original alphabet, and replaces that character with the
+        matching index of the shuffled character set. It then constructs
+        the result and outputs it.</p><br><br>
+        <p>The decryption works the exact same way, just in reverse.
+        It takes each index of the characters in the <b>encrypted message</b>, 
+        matches it with the indexes of the shuffled character set, and then matches
+        it again with the indexes of the original alphabet. It then constructs the 
+        result and outputs it.</p><br><br>
+        <p>I tried my best to explain the method i used to build this tool. Thank you
+        for taking your time to check it out and read my explanation.</p>
+    </article>
+</body>
+</html>
