@@ -7,24 +7,38 @@
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
     <body>
-        <div id="tool">
-            <h1>Welcome to the message encryption tool!</h1>
+        <div id="mainContainer">  
+
+            <div id="header">
+                <h1 id="headerH1">Welcome to the message encryption tool!</h1>
+                <div id="headerRight">
+                    <a href="" id="infoPage" class="link">How this tool works</a>
+                    <a href="Decryption Page/decryption.html" class="link" id="decryptionPage">Go to the decryption page</a>
+                </div>
+            </div>
+
+            <div id="encryptionTool">
+                <div id="messageInputContainer">
+                    <label for="messageToBeCoded" id="messageToBeCodedLabel">The message you want to encrypt: </label>
+                    <input id="messageToBeCoded">
+                    <span id="inputMirror"></span>
+                </div>
+                <button id="submit">Submit</button>
+                <p id="encryptedMessage">Encrypted Message: <label id="encryptedMessageResult"></label></p>
+            </div>
+
+            <div id="keyViewerContainer">
+                <button id="keyViewer">View your Key</button>
+                <h3 id="keyH3">Your Key: <label id="keyResult"></label></h3>
+                <button id="keyCopyBtn">Copy the key!</button>
+                <span id="copyMessage" style="margin-left: 10px;">Copied!</span>
+            </div>
+
+           
 
         
-            <label for="messageToBeCoded">The message you want to encrypt:</label>
-            <input id="messageToBeCoded"><br>
-            <button id="submit">Submit</button>
-            <h3 id="encryptedMessage">Encrypted Message: <label id="encryptedMessageResult"></label></h3>
-            
         </div>
-            <button id="keyViewer">View your Key</button>
-            <h3 id="keyH3">Your Key: <label id="keyResult"></label></h3>
-            <button id="keyCopyBtn">Copy the key!</button>
-            <span id="copyMessage" style="margin-left: 10px;">Copied!</span>
 
-        
-        
-            <a href="Decryption Page/decryption.html" id="decryptionPage">Go to the decryption page</a>
     <script src="script/java.js"></script>
     </body>
 </html>

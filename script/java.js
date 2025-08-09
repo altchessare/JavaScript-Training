@@ -4,6 +4,7 @@ const key = document.getElementById("keyH3");
 const keyViewer = document.getElementById("keyViewer");
 const keyResult = document.getElementById("keyResult");
 const keyCopyBtn = document.getElementById("keyCopyBtn");
+const copyMessage = document.getElementById("copyMessage");
 let shuffledCharSet = "";
 let result;
 let originalMessage;

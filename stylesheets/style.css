@@ -1,35 +1,102 @@
-body{
+html, body{
+    padding: none;
+    margin: none;
+    height: 100%;   
+    background: black;
+}
+
+*{
+    color: white;
+}
+
+#mainContainer{
+    margin: none;
+    padding: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
-#tool{
-    display: block;
-    text-align: center;
-}
+/* Header */
 
-#decryptionPage{
+.link{
     text-decoration: none;
-    color: black;
+    font-size: 1.2em;
     padding: 5px 10px;
     border-radius: 10px;
-    width: fit-content;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 100px;
     transition: 0.5s;
 }
 
-#decryptionPage:hover{
-    color: greenyellow;
+.link:hover{
     background-color: black;
+    color: rgb(104, 0, 0);
 }
 
-#keyH3, #encryptedMessage{
-    justify-self: flex-start;
+#header{
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    align-items: center;
+    background: linear-gradient(to right, rgb(104, 0, 0), black, rgb(104, 0, 0));
 }
+
+#headerRight{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+    margin-right: 40px;
+    flex: 1;
+}
+
+#headerH1{
+    flex: 1;
+}
+
+/* Main Tool */
+
+#encryptionTool{
+    border: solid white 1px;
+    font-size: 2em;
+    margin: 20px;
+    display: block;
+    padding: 10px;
+}
+
+#messageInputContainer{
+    display: flex;
+    align-items: center;
+}
+
+#inputMirror{
+    position: absolute;       
+    visibility: hidden;       
+    white-space: pre;        
+    font: inherit;            
+    font-size: inherit;       
+    padding: 4px 10px;        
+    background: none;        
+    border: none;    
+}
+
+#messageToBeCoded{
+    background: linear-gradient(to right, gray, black) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+
+#messageToBeCodedLabel{
+    margin: 0;
+    padding: 0 10px 0 0;
+    align-items: center;
+}
+
+/* Essentials for javascript. */
 
 #keyH3,
 #keyResult,
@@ -58,51 +125,4 @@ body{
 #keyResult.visible,
 #copyMessage.visible {
     visibility: visible;
-}
-
-#submit{
-    margin: 30px;
-    font-size: 20px;
-    padding: 5px 10px;
-    border: none;
-    background: none;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#submit:hover{
-    background-color: green;
-    color: white;
-}
-
-#keyViewer{
-    border-radius: 10px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-    padding: 5px 10px;
-    margin: 30px;
-}
-
-#keyViewer:hover{
-    color: white;
-    background-color: black;
-}
-
-#keyCopyBtn{
-    margin: 30px;
-    padding: 5px 10px;
-    border: none;
-    background: none;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#keyCopyBtn:hover{
-    background-color: gray;
-    color: white;
 }
