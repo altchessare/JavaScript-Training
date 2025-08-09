@@ -37,9 +37,14 @@ html, body{
     transition: 0.5s;
 }
 
-.link:hover{
+#infoPage:hover{
     background-color: black;
-    color: rgb(26, 104, 0);
+    color: purple;
+}
+
+#encryptionPageLink:hover{
+    background-color: black;
+    color: red;
 }
 
 #headerRight{

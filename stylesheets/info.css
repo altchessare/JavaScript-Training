@@ -24,3 +24,22 @@ body{
   word-break: break-word; /* for better browser support */
   white-space: normal;    /* just to be sure */
 }
+
+.link{
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: blueviolet;
+}
+
+#goBackToEnc:hover{
+    background-color: rgba(128, 0, 128, 0.271);
+    color: rgb(255, 0, 0);
+}
+
+#goBackToDec:hover{
+    background-color: rgba(128, 0, 128, 0.271);
+    color: rgb(26, 255, 0);
+}
